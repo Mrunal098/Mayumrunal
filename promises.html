@@ -1,0 +1,18 @@
+<script>
+    var record= new Promise((res,rej)=>{ //3 steps 1.pending 2.fullfiled 3.rejected promise is like execption handler
+            console.log(typeof res);
+            console.log(typeof rej);
+            //res("task is completed")
+           rej("it not completed")
+
+    })
+    // then is a handler to handle ur resloved values
+    record.then((value)=>{
+        console.log(value);
+    }).catch((error)=>{ // handle ur errors and rejections
+        console.log(error);
+    }).finally(()=>{//it will run whatever it is there error or success
+        console.log("go for next task");
+    })
+    console.log(record);
+</script>
