@@ -1,0 +1,22 @@
+<script>
+    // single level inherintance
+    class a {
+        myfun(){
+            console.log("bhadkhau");
+        }
+    }
+    class b extends a{
+
+        myfun1(){
+            console.log("bhikhari");
+        }
+        myfun(){
+            super.myfun()
+            console.log("harami");
+        }
+    }
+    let rec=new b 
+    console.log(rec);
+    rec.myfun1();
+    rec.myfun()
+</script>

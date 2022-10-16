@@ -1,0 +1,18 @@
+<script>
+    // single level inherintance
+    class a {
+       constructor(){
+        console.log("i am a");
+       }
+    }
+    class b extends a{
+
+        constructor(){
+        console.log("  i am b");
+        super();
+        console.log(this);
+       }
+    }
+    let rec=new b 
+   
+</script>
